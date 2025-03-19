@@ -467,6 +467,8 @@ class WebSocketDemo extends StatefulWidget {
 
 class _WebSocketDemoState extends State<WebSocketDemo> {
   final _channel = IOWebSocketChannel.connect('ws://echo.websocket.org');
+// for web apps
+// use this instead WebSocketChannel.connect(Uri.parse('ws://echo.websocket.org'));
 
   @override
   Widget build(BuildContext context) {
